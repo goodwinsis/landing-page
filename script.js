@@ -1,5 +1,5 @@
 // ============================================
-// ASOLIS — Landing Page Scripts
+// ДЕКАРТ — Landing Page Scripts
 // ============================================
 
 document.addEventListener('DOMContentLoaded', () => {

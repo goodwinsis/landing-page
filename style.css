@@ -1,5 +1,5 @@
 /* ============================================
-   ASOLIS — Modern Landing Page Styles
+   ДЕКАРТ — Modern Landing Page Styles
    ============================================ */
 
 :root {
@@ -560,6 +560,11 @@ img {
     color: var(--color-text-light);
     line-height: 1.8;
     margin-top: 1.5rem;
+}
+
+.about__text strong {
+    color: var(--color-primary);
+    font-weight: 600;
 }
 
 .about__stats {
