@@ -87,6 +87,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     counters.forEach(el => counterObserver.observe(el));
 
+    // --- Pricing tabs ---
+    const tabs = document.querySelectorAll('.pricing__tab');
+    const panels = document.querySelectorAll('.pricing__panel');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const target = tab.dataset.tab;
+            tabs.forEach(t => t.classList.remove('pricing__tab--active'));
+            panels.forEach(p => p.classList.remove('pricing__panel--active'));
+            tab.classList.add('pricing__tab--active');
+            document.querySelector(`[data-panel="${target}"]`).classList.add('pricing__panel--active');
+        });
+    });
+
     // --- Form submit ---
     const form = document.getElementById('contactForm');
     form.addEventListener('submit', (e) => {
